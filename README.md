@@ -1,5 +1,3 @@
-# XAI611
-
 # How to run
 
 ### Pretraining dataset
