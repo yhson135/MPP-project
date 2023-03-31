@@ -124,7 +124,6 @@ def main():
     parser.add_argument('--log_dir', type=str, default="",
                         help='tensorboard log directory')
     parser.add_argument('--checkpoint_dir', type=str, default=f'ckpt/{timestamp}', help='directory to save checkpoint')
-    parser.add_argument('--save_test_dir', type=str, default=f'test_result/{timestamp}', help='directory to save test submission file')
     args = parser.parse_args()
 
     print(args)
@@ -211,9 +210,8 @@ def main():
                               'num_params': num_params}
                 torch.save(checkpoint, os.path.join(args.checkpoint_dir, 'checkpoint.pt'))
 
-            if args.save_test_dir != '':
-                test_auc = eval(model, device, test_loader, evaluator)
-                print(f"Test MAE: {test_auc}")
+            test_auc = eval(model, device, test_loader, evaluator)
+            print(f"Test MAE: {test_auc}")
         scheduler.step()
 
         print(f'Best validation MAE so far: Epoch {best_epoch}: {best_valid_auc}')
