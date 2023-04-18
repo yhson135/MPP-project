@@ -10,6 +10,8 @@ main_bbbp.py
 train/val/test dataset is already in the folder.
 
 ## Colab Installing Example
+### There was a problem when intalling ogb before the torch-geometry. Please install in order by torch-geometry > rdkit > ogb   
+
 import os
 
 import torch
