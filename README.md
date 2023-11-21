@@ -2,9 +2,8 @@
 
 ### Pretraining dataset
 main_PCQM4.py   
---train_subset: Whether to use only fraction of train data  
---gnn: gin-virtual or gru  
-
+--train_subset: Whether to use only a fraction of train data  
+--gnn: select the gnn type  
 ### Finetuning dataset
 main_bbbp.py
 train/val/test dataset is already in the folder.
