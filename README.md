@@ -4,6 +4,8 @@
 main_PCQM4.py   
 --train_subset: Whether to use only a fraction of train data  
 --gnn: select the gnn type  
+If you run main_PCQM4.py, there will be a preprocessing stage. After you run the code, you will find dataset/pcqm4m-v2 folder.
+Please save this folder. If there is a dataset/pcqm4m-v2 folder, the preprocessing stage will be skipped.
 ### Finetuning dataset
 main_bbbp.py
 
