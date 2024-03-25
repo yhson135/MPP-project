@@ -6,6 +6,7 @@ main_PCQM4.py
 --gnn: select the gnn type  
 If you run main_PCQM4.py, there will be a preprocessing stage. After you run the code, you will find dataset/pcqm4m-v2 folder.
 Please save this folder. If there is a dataset/pcqm4m-v2 folder, the preprocessing stage will be skipped.
+Please do not pretrain on Colab notebook. The file is too big.
 ### Finetuning dataset
 main_bbbp.py
 
